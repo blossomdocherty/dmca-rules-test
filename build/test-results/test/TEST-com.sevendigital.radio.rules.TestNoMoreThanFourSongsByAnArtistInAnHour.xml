@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-07-20T17:56:27" hostname="b-0089" time="0.085">
+  <properties/>
+  <testcase name="the first song by an artist is allowed" classname="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" time="0.077"/>
+  <testcase name="four songs by an artist in an hour are allowed" classname="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" time="0.005"/>
+  <testcase name="five songs by an artist in an hour are not allowed" classname="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" time="0.0"/>
+  <testcase name="five songs by an artist in more an hour are allowed" classname="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" time="0.0"/>
+  <testcase name="five songs by an artist in any one hour window are not allowed" classname="com.sevendigital.radio.rules.TestNoMoreThanFourSongsByAnArtistInAnHour" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

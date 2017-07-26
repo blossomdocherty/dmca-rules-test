@@ -1,0 +1,29 @@
+group 'com.sevendigital.radio'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+	mavenCentral()
+}
+
+dependencies {
+	compile "org.apache.commons:commons-lang3:3.6"
+	compile "net.sf.trove4j:trove4j:3.0.3"
+	testCompile "org.assertj:assertj-core:3.8.0"
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+task projectZip(type: Zip) {
+	classifier = 'src'
+	from projectDir
+	include 'src/**/*'
+	include 'README.md'
+	include '?*.gradle', 'gradle*', 'gradle/**/*'
+}
